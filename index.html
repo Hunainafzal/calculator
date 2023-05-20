@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="Calculator">
+    <h1 class="text-light">Calculator</h1>
+    <input type="text" id="inputbox" placeholder="0">
+
+    <div class="button">
+      <button onclick="clearInput()">AC</button>
+      <button onclick="clearLastChar()">C</button>
+      <button onclick="appendOperator('%')">%</button>
+      <button onclick="appendOperator('*')">x</button>
+    </div>
+
+    <div class="button">
+      <button onclick="appendToInput('7')">7</button>
+      <button onclick="appendToInput('8')">8</button>
+      <button onclick="appendToInput('9')">9</button>
+      <button onclick="appendOperator('/')">/</button>
+    </div>
+
+    <div class="button">
+      <button onclick="appendToInput('4')">4</button>
+      <button onclick="appendToInput('5')">5</button>
+      <button onclick="appendToInput('6')">6</button>
+      <button onclick="appendOperator('+')">+</button>
+    </div>
+
+    <div class="button">
+      <button onclick="appendToInput('1')">1</button>
+      <button onclick="appendToInput('2')">2</button>
+      <button onclick="appendToInput('3')">3</button>
+      <button onclick="appendOperator('-')">-</button>
+    </div>
+
+    <div class="button">
+      <button onclick="appendToInput('0')">0</button>
+      <button onclick="appendToInput('.')">.</button>
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
